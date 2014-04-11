@@ -1,0 +1,17 @@
+{
+  "name": "Homework3.1",
+  "version": "0.0.0",
+  "description": "```bash $ mongo MongoDB shell version: 2.4.9 connecting to: test > use school switched to db school > db.students.aggregate({'$unwind':'$scores'},{'$group':{'_id':'$_id', 'average':{$avg:'$scores.score'}}}, {'$sort':{'average':-1}}, {'$limit':1}) { \t\"result\" : [ \t\t{ \t\t\t\"_id\" : 13, \t\t\t\"average\" : 91.98315917172745 \t\t} \t], \t\"ok\" : 1 } ```",
+  "main": "index.js",
+  "dependencies": {
+    "async": "~0.7.0",
+    "lodash": "~2.4.1",
+    "mongodb": "~1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
